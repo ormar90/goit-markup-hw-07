@@ -4,11 +4,6 @@
   background-color: $footerBackgroundColor;
 }
 
-.footer__container {
-  align-items: baseline;
-  display: flex;
-}
-
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -52,16 +47,6 @@
 .footer__social {
   width: 206px;
   margin-left: 85px;
-}
-
-.footer-social__title {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $mainWhiteColor;
 }
 
 .social__link--change-color {

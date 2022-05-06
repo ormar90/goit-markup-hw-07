@@ -24,6 +24,10 @@ img {
   text-decoration: none;
 }
 
+.list {
+  list-style-type: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -38,10 +42,6 @@ img {
   margin: -1px;
 }
 
-.list {
-  list-style-type: none;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -49,15 +49,91 @@ img {
   padding-right: 15px;
   padding-left: 15px;
 }
+.container--header {
+  display: flex;
+  align-items: center;
+}
+.container--footer {
+  align-items: baseline;
+  display: flex;
+}
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section--work {
+  padding-top: 0;
+}
 
-.header__container {
-  display: flex;
-  align-items: center;
+.title {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.title--clients {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.title--footer-social {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.title--hero {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: 696px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.title--modal {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+.title--project {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.title--specifics {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.title--subscribe {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.title--team {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.title--work {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .header {
@@ -165,20 +241,6 @@ img {
   padding-bottom: 200px;
 }
 
-.hero__title {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-  width: 696px;
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
 .button {
   display: block;
   margin-right: auto;
@@ -223,31 +285,9 @@ img {
   margin-right: 30px;
 }
 
-.specifics__title {
-  margin-bottom: 10px;
-  color: #212121;
-  font-size: 14px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
 .specifics__text {
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
-.work {
-  padding-top: 0;
-}
-
-.work__title {
-  margin-bottom: 50px;
-  color: #212121;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -286,16 +326,6 @@ img {
 
 .team {
   background-color: #f5f4fa;
-}
-
-.team__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team__list {
@@ -362,15 +392,6 @@ img {
   fill: #ffffff;
 }
 
-.clients__title {
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
 .clients__list {
   display: flex;
   margin-right: -30px;
@@ -407,11 +428,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.footer__container {
-  align-items: baseline;
-  display: flex;
 }
 
 .footer__logo {
@@ -453,16 +469,6 @@ img {
   margin-left: 85px;
 }
 
-.footer-social__title {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
 .social__link--change-color {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -474,16 +480,6 @@ img {
 .subscribe {
   margin-left: 94px;
   flex-grow: 1;
-}
-
-.subscribe__title {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .subscribe__filed {
@@ -619,14 +615,6 @@ img {
   border-top: 0;
 }
 
-.project__title {
-  margin-bottom: 4px;
-  color: #212121;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
 .project__subtitle {
   font-size: 16px;
   line-height: 1.9;
@@ -725,16 +713,6 @@ img {
 .modal__icon:hover .modal__icon--close, .modal__icon:focus .modal__icon--close {
   fill: #2196f3;
   transform: rotate(90deg);
-}
-
-.modal__title {
-  display: block;
-  text-align: center;
-  margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .modal__filed {

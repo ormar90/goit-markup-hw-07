@@ -68,17 +68,6 @@
   @include transition2 (fill, transform);
 }
 
-.modal__title {
-  display: block;
-  text-align: center;
-  margin-bottom: 12px;
-  
-  font-size: 20px;  
-  line-height: 1.15;  
-  letter-spacing: 0.03em;
-  color: $titleColor;
-}
-
 .modal__filed {
   position: relative;
   width: 100%;
